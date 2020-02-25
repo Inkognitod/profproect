@@ -1,0 +1,333 @@
+/*--- CSS Reset ---*/
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  display: block
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*@import url("fonts/stylesheet.css");*/
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SFProDisplay-Medium.eot');
+    src: local('fonts/SF Pro Display Medium'), local('fonts/SFProDisplay-Medium'),
+        url('fonts/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('fonts/SFProDisplay-Medium.woff') format('woff'),
+        url('fonts/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*--- CSS Main ---*/
+body{
+	font-family: 'SF Pro Display';
+	font-style: normal;
+	font-size: 14px;
+	line-height: 130%;
+	letter-spacing: 0.05em;
+}
+.red {
+	color: #CC1417;
+}
+section {
+	width:100%;
+	/*height: 100vh;*/
+	padding: 10% 0;
+}
+section .title{
+	margin: 0 0 60px;
+}
+section .title h2{
+	font-size: 36px;
+	text-transform: uppercase;
+}
+.btn, .form-control {
+border-radius: 0 !important;
+}
+
+/*--- CSS Header ---*/
+.burger{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 159px;
+	top: 45px;
+	background:url(images/burger.png);
+	background-size:cover;
+}
+.bg-custom-1 {
+  background-color: #85144b;
+}
+
+.bg-custom-2 {
+background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+.contacts {
+	text-align:right;
+}
+
+
+/*--- CSS header-section ---*/
+.header-section {
+position: absolute;
+    padding: 0;
+}
+.header-section  .contacts {
+	font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*--- CSS first-section ---*/
+.first-section{
+	background: url(images/main-bg.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 16% 0;
+}
+.first-section h1{
+	font-weight: 500;
+	font-size: 60px;
+	text-transform: uppercase;
+	color: #191717;
+}
+.first-section p{
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 130%;
+	color: #000000;
+}
+.first-section button {
+	width: 210px;
+	height: 54px;
+	background: #191717;
+	font-weight: normal;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.first-section button.btn:hover {
+    background: none;
+    border: 1px solid #191717;
+    box-sizing: border-box;
+}
+
+/*--- CSS second-section ---*/
+.second-section {
+    background: linear-gradient(90deg, rgba(25,23,23,.9) 0%, rgba(25,23,23,.9) 49%, rgba(255,255,255,1) 49%);
+}
+.second-section .title h2 {
+	color:#FFFFFF;
+}
+a#v-pills-home-tab {
+	background: none;
+	font-size: 24px;
+}
+a.nav-link {
+	color: #fff;
+	background: none;
+	font-size: 24px;
+	line-height: 130%;
+}
+a.nav-link.active{
+	color: #CC1417 !important;
+	background: none !important;
+}
+.second-section h3 {
+	font-size: 18px;
+	text-decoration-line: underline;
+	color: #000000;
+}
+.carousel-inner .carousel-item.active,.carousel-inner .carousel-item-next,.carousel-inner .carousel-item-prev{display:flex}
+.carousel-inner .carousel-item-right.active,.carousel-inner .carousel-item-next{transform:translateX(25%)}
+.carousel-inner .carousel-item-left.active,.carousel-inner .carousel-item-prev{transform:translateX(-25%)}
+.carousel-inner .carousel-item-right,.carousel-inner .carousel-item-left{transform:translateX(0)}
+.carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #212529;
+ }
+.benefits-item-white {
+	color:#fff;
+}.benefits-item-red {
+	color:#CC1417;
+}
+.second-section .btn{
+	background: #191717;
+	color:#fff;
+	padding:14px 20px;
+}
+p.b-text {
+    padding: 10px 10px 10px 0;
+}
+
+
+/*--- CSS third-section ---*/
+.news-item>div {
+	margin:10px 0;
+}
+.news-item-date {
+	font-size: 14px;
+	opacity: 0.6;
+}
+.news-item-title {
+	font-size: 18px;
+}
+.news-more {
+	font-size: 18px;
+	text-decoration-line: underline;
+	opacity: 0.5;
+	text-transform:uppercase;
+	text-align:center;
+}
+.news-more a {
+	color:#191717;
+}
+
+/*--- CSS second-section ---*/
+.four-section {
+	background: url(images/section-4-bg.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 10% 0 20%;
+	margin-bottom: -170px;
+}
+.four-section-title {
+	font-size: 60px;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: #000000;
+	padding-bottom:20px;
+}
+.four-section-text{
+	font-size: 24px;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: #CC1417;
+}
+.four-section .btn {
+	width: 210px;
+	height: 54px;
+	background: #191717;
+	font-weight: normal;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.four-section .btn:hover {
+    background: none;
+    border: 1px solid #191717;
+    box-sizing: border-box;
+	color:#000;
+}
+
+/*--- CSS footer ---*/
+footer {
+    background: rgba(255,255,255,0.9);
+}
+footer .contacts {
+	font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*--- CSS burger ---*/
+#sidebar-wrapper.toggled {
+ 
+    display: block !important;
+z-index: 99;
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+}
+#sidebar-wrapper {
+	position: absolute;
+    width: 49%;
+    height: 100%;
+		top: 0;
+		display: none;
+    background: #1a1a1a;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#sidebar-wrapper::-webkit-scrollbar {
+ display: none;
+}
+/* Sidebar nav styles */
+.sidebar-nav {
+ margin: 20px 0 0 80px;
+ padding: 0;
+ list-style: none;
+}
+.sidebar-nav li {
+ position: relative; 
+ display: inline-block;
+ width: 100%;
+ padding: 20px 0;
+}
+.sidebar-nav li a{
+ color:#fff;
+ font-size:36px;
+ line-height:130%;
+ text-transform: uppercase;
+}
+
+/* Hamburger-Cross */
+.hamburger {
+ position: absolute;
+ top: 20px; 
+ z-index: 999;
+ display: block;
+ width: 32px;
+ height: 32px;
+ margin-left: 15px;
+ background: transparent;
+ border: none;
+}
+.hamburger:hover,
+.hamburger:focus,
+.hamburger:active {
+ outline: none;
+}
