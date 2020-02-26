@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Document</title>
-
+	<link rel="icon" href="images/favicon.ico" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" media="all" href="css/animate.css">
@@ -378,7 +378,7 @@ https://codepen.io/inkognitod/pen/gOpmmGX
 					<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 					<div class="elfsight-app-dc752aed-fb79-48eb-aced-2c5be31827e8"></div>
 					<!-- Конец ленты инстаграм  -->
-				<div class="row hidden-sm-down">
+				<!--<div class="row hidden-sm-down">
 					<div class="col-md-4 news-item wow animated fadeIn">
 						<div class="news-item-image">
 							<img src="images/news-image.jpg" alt="">
@@ -411,7 +411,7 @@ https://codepen.io/inkognitod/pen/gOpmmGX
 						<div class="news-item-title">
 							Завершение отделочных работ в офисе "DELCO"
 						</div>
-					</div>
+					</div>-->
 					</div>
 					<div id="carouselExampleIndicators" class="carousel slide hidden-md-up wow animated fadeIn" data-ride="carousel">
 					  <ol class="carousel-indicators">
