@@ -1,34 +1,6 @@
-new WOW().init();
-
 $(document).ready(function () {
-/*  Gamburger menu  */
- var trigger = $('.hamburger'),
- overlay = $('.overlay'),
- isClosed = false;
 
- trigger.click(function () {
- hamburger_cross(); 
- });
-
- function hamburger_cross() {
-
- if (isClosed == true) { 
- overlay.hide();
- trigger.removeClass('is-open');
- trigger.addClass('is-closed');
- isClosed = false;
- } else { 
- overlay.show();
- trigger.removeClass('is-closed');
- trigger.addClass('is-open');
- isClosed = true;
- }
- }
- 
- $('[data-toggle="offcanvas"]').click(function () {
- $('#sidebar-wrapper').toggleClass('toggled');
- }); 
-
+new WOW().init();
 
 /*  Carousel  */
 $('#multiCarousel').carousel({
@@ -110,8 +82,6 @@ $('#multiCarousel4.carousel .carousel-item').each(function(){
 
 /* Маска телефона */
 $('input[name="phone"]').inputmask('+7(999) 999-99-99')
-    $("#time1").inputmask("99:99");
-    $("#time2").inputmask("99:99");
 
 
 });

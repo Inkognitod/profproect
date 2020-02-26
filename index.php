@@ -16,32 +16,34 @@
 <link rel="stylesheet" media="all" href="css/animate.css">
 </head>
 <body>
-	 <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
- <!--<span class="hamb-top"></span>
- <span class="hamb-middle"></span>
- <span class="hamb-bottom"></span>-->
+	<nav class="main-nav" role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <!--
  <img src="images/burger.png" alt="">
- </button>
-	<!-- Sidebar -->
- <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
- <ul class="nav sidebar-nav">
- <li>
+https://codepen.io/inkognitod/pen/gOpmmGX
+-->
+	<div class="spanbg"></div>
+    <span></span>
+    <span></span>
+    <span></span>
+  
+    <ul id="menu">
+       <li class="nav-item">
  <img src="images/logo-w.png" alt="">
  </li>
- <li>
- <a href="#">Наши проекты</a>
+ <li class="nav-item">
+ <a class="nav-link" href="#project">Наши проекты</a>
  </li>
- <li>
- <a href="#">Новости</a>
+ <li class="nav-item">
+ <a class="nav-link" href="#news">Новости</a>
  </li>
- <li>
- <a href="#">Контакты</a>
+ <li class="nav-item">
+ <a class="nav-link" href="#contacts">Контакты</a>
  </li>
- <li>
- <a href="#">Галерея</a>
- </li>
- </ul>
- </nav>
+    </ul>
+  </div>
+</nav>
  <!-- /#sidebar-wrapper -->
 	<section class="header-section animated bounceInDown">
 	<header class="m-3 p-2 hidden-sm-down">
@@ -80,7 +82,7 @@
 					<div class="col-sm-6 col-xs-12">
 						<h1>Мы создадим для вас <br /><span class="red">уют</span></h1>
 						<p>Мы берём все трудности по ремонту на себя</p>
-						<button class="btn">заказать рассчеты</button>
+						<button class="btn"><a href="#contacts">заказать рассчеты</a></button>
 					</div>
 				</div>
 				<div class="col-md-2 justify-content-center d-inline-flex align-items-center hidden-md-up">
@@ -88,7 +90,7 @@
 				</div>
 			</div>
 	</section>
-	<section class="second-section">
+	<section id="project" class="second-section">
 		<div class="container">
 			<div class="row">
 				<div class="title d-flex justify-content-center">
@@ -174,12 +176,20 @@
 	                    <div class="col-md-4 hidden-sm-down">
 											<img src="images/vid.jpg" alt="">
 										</div>
-										<div class="col-md-8">
-											<h3>Кухня - гостиная</h3>
-											<p>Кухня, в современном, мире стала не только местом для приготовлении пищи, но и место где можно првоести время с друзьями и просто отдохнуть.</p>
-											<p>Здесь необходимо сочетать высокие технологии и комфорт. Наши дизайнеры сделают проект, полностью отвечающим Вашим потребностям и пожеланиям</p>
-											<div id="multiCarousel2" class="carousel slide" data-ride="carousel">
-												<div class="carousel-inner w-100" role="listbox">
+										<div class="col-xs-8 col-md-8">
+										<div class="row">
+											<div class="col-12 mob-first">
+												<h3>Кухня - гостиная</h3>
+												<p>Кухня, в современном, мире стала не только местом для приготовлении пищи, но и место где можно првоести время с друзьями и просто отдохнуть.</p>
+												<p>Здесь необходимо сочетать высокие технологии и комфорт. Наши дизайнеры сделают проект, полностью отвечающим Вашим потребностям и пожеланиям</p>
+											</div>
+											<div id="multiCarousel" class="carousel slide col-12 mob-second" data-ride="carousel">
+												<div class="carousel-inner" role="listbox">
+												  <ol class="carousel-indicators">
+												    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+												    <li data-target="#carousel" data-slide-to="1"></li>
+												    <li data-target="#carousel" data-slide-to="2"></li>
+												  </ol>
 												  <div class="row">
 																    <div class="carousel-item active">
 																      <img class="d-block col-md-6 col-xs-12" src="https://placehold.it/350x180?text=1">
@@ -199,18 +209,20 @@
 																		<div class="carousel-item">
 																			<img class="d-block col-md-6 col-xs-12" src="https://placehold.it/350x180?text=6">
 																		</div>
-													</div>
+														</div>
 												</div>
-																  <a class="carousel-control-prev" href="#multiCarousel2" role="button" data-slide="prev">
+																  <a class="carousel-control-prev" href="#multiCarousel" role="button" data-slide="prev">
 																    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 																    <span class="sr-only">Предыдущий</span>
 																  </a>
-																  <a class="carousel-control-next" href="#multiCarousel2" role="button" data-slide="next">
+																  <a class="carousel-control-next" href="#multiCarousel" role="button" data-slide="next">
 																    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 																    <span class="sr-only">Cледующий</span>
 																  </a>
 											</div>
+
 										</div>
+									</div>
 									</div>
 							</div>
 							<div class="tab-pane wow animated bounceInRight" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
@@ -218,12 +230,21 @@
 	                    <div class="col-md-4 hidden-sm-down">
 											<img src="images/vid.jpg" alt="">
 										</div>
-										<div class="col-md-8">
-											<h3>Кухня - гостиная</h3>
-											<p>Кухня, в современном, мире стала не только местом для приготовлении пищи, но и место где можно првоести время с друзьями и просто отдохнуть.</p>
-											<p>Здесь необходимо сочетать высокие технологии и комфорт. Наши дизайнеры сделают проект, полностью отвечающим Вашим потребностям и пожеланиям</p>
-											<div id="multiCarousel3" class="carousel slide" data-ride="carousel">
-												<div class="carousel-inner w-100" role="listbox">
+										<div class="col-xs-8 col-md-8">
+										<div class="row">
+											<div class="col-12 mob-first">
+												<h3>Кухня - гостиная</h3>
+												<p>Кухня, в современном, мире стала не только местом для приготовлении пищи, но и место где можно првоести время с друзьями и просто отдохнуть.</p>
+												<p>Здесь необходимо сочетать высокие технологии и комфорт. Наши дизайнеры сделают проект, полностью отвечающим Вашим потребностям и пожеланиям</p>
+											</div>
+											<div id="multiCarousel" class="carousel slide col-12 mob-second" data-ride="carousel">
+												<div class="carousel-inner" role="listbox">
+												  <ol class="carousel-indicators">
+												    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+												    <li data-target="#carousel" data-slide-to="1"></li>
+												    <li data-target="#carousel" data-slide-to="2"></li>
+												  </ol>
+												  <div class="row">
 																    <div class="carousel-item active">
 																      <img class="d-block col-md-6 col-xs-12" src="https://placehold.it/350x180?text=1">
 																    </div>
@@ -242,17 +263,20 @@
 																		<div class="carousel-item">
 																			<img class="d-block col-md-6 col-xs-12" src="https://placehold.it/350x180?text=6">
 																		</div>
+														</div>
 												</div>
-																  <a class="carousel-control-prev" href="#multiCarousel3" role="button" data-slide="prev">
+																  <a class="carousel-control-prev" href="#multiCarousel" role="button" data-slide="prev">
 																    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 																    <span class="sr-only">Предыдущий</span>
 																  </a>
-																  <a class="carousel-control-next" href="#multiCarousel3" role="button" data-slide="next">
+																  <a class="carousel-control-next" href="#multiCarousel" role="button" data-slide="next">
 																    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 																    <span class="sr-only">Cледующий</span>
 																  </a>
 											</div>
+
 										</div>
+									</div>
 									</div>
 							</div>
 							<div class="tab-pane wow animated bounceInRight" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
@@ -260,12 +284,21 @@
 	                    <div class="col-md-4 hidden-sm-down">
 											<img src="images/vid.jpg" alt="">
 										</div>
-										<div class="col-md-8">
-											<h3>Кухня - гостиная</h3>
-											<p>Кухня, в современном, мире стала не только местом для приготовлении пищи, но и место где можно првоести время с друзьями и просто отдохнуть.</p>
-											<p>Здесь необходимо сочетать высокие технологии и комфорт. Наши дизайнеры сделают проект, полностью отвечающим Вашим потребностям и пожеланиям</p>
-											<div id="multiCarousel4" class="carousel slide" data-ride="carousel">
-												<div class="carousel-inner w-100" role="listbox">
+										<div class="col-xs-8 col-md-8">
+										<div class="row">
+											<div class="col-12 mob-first">
+												<h3>Кухня - гостиная</h3>
+												<p>Кухня, в современном, мире стала не только местом для приготовлении пищи, но и место где можно првоести время с друзьями и просто отдохнуть.</p>
+												<p>Здесь необходимо сочетать высокие технологии и комфорт. Наши дизайнеры сделают проект, полностью отвечающим Вашим потребностям и пожеланиям</p>
+											</div>
+											<div id="multiCarousel" class="carousel slide col-12 mob-second" data-ride="carousel">
+												<div class="carousel-inner" role="listbox">
+												  <ol class="carousel-indicators">
+												    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+												    <li data-target="#carousel" data-slide-to="1"></li>
+												    <li data-target="#carousel" data-slide-to="2"></li>
+												  </ol>
+												  <div class="row">
 																    <div class="carousel-item active">
 																      <img class="d-block col-md-6 col-xs-12" src="https://placehold.it/350x180?text=1">
 																    </div>
@@ -284,24 +317,27 @@
 																		<div class="carousel-item">
 																			<img class="d-block col-md-6 col-xs-12" src="https://placehold.it/350x180?text=6">
 																		</div>
+														</div>
 												</div>
-																  <a class="carousel-control-prev" href="#multiCarousel4" role="button" data-slide="prev">
+																  <a class="carousel-control-prev" href="#multiCarousel" role="button" data-slide="prev">
 																    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 																    <span class="sr-only">Предыдущий</span>
 																  </a>
-																  <a class="carousel-control-next" href="#multiCarousel4" role="button" data-slide="next">
+																  <a class="carousel-control-next" href="#multiCarousel" role="button" data-slide="next">
 																    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 																    <span class="sr-only">Cледующий</span>
 																  </a>
 											</div>
+
 										</div>
+									</div>
 									</div>
 							</div>
 						</div>
       	  </div>
 				</div>
 				<div class="row col-12 py-5 hidden-sm-down">
-					<div class="btn offset-8">Заказать расчеты</div>
+					<div class="btn offset-8"><a href="#contacts">Заказать расчеты</a></div>
 				</div>
 				<div class="row col-12 hidden-md-up">
 					<div class="btn">Заказать расчеты</div>
@@ -335,7 +371,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="third-section">
+	<section id="news" class="third-section">
 			<div class="container">
 				<div class="row">
 					<div class="title d-flex justify-content-center">
@@ -416,7 +452,7 @@
 				</div>
 			</div>
 	</section>
-	<section class="four-section d-flex align-items-center flex-sm-column-reverse">
+	<section id="contacts" class="four-section d-flex align-items-center flex-sm-column-reverse">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 mob-first wow animated bounceInLeft">
