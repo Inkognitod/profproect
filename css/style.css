@@ -70,6 +70,7 @@ body{
 	font-size: 14px;
 	line-height: 130%;
 	letter-spacing: 0.05em;
+	overflow-x:hidden;
 }
 .red {
 	color: #CC1417;
@@ -517,7 +518,7 @@ footer .contacts {
 {
   position: absolute;
   width: 49%;
-	height: calc(100vh + 21vh);
+	height: calc(100vh + 4vh);
   margin: -100px 0 0 -50px;
   padding: 50px 50px 50px 25%;
   padding-top: 125px;
@@ -538,6 +539,9 @@ footer .contacts {
   padding: 10px 0;
   font-size: 22px;
 }
+  #menuToggle #menu img{
+  	width: 100%;
+	}
 
 /*
  * And let's slide it in from the left
@@ -548,19 +552,19 @@ footer .contacts {
 }
 
 @media  (max-width: 767px) { 
-	.sidebar-nav {
-    display: inline-block;
+	#menu {
+    z-index: 9;
+    width: auto;
+  }
+  #menuToggle .spanbg {
+    z-index: 99;
 	}
-	.sidebar-nav li img {
-	    width: 80%;
-	}
-	.sidebar-nav li a {
-    font-size: 24px;
-    line-height: 100%;
-	}
-	#sidebar-wrapper {
-	    width: 100%;
-	}
+	#menuToggle span {
+    z-index: 100;
+  }
+  #menuToggle input {
+    z-index: 101;
+  }
 }
 @media only screen and (max-width: 768px) {
 	.mob-first {

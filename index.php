@@ -3,17 +3,11 @@
 <head>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 	<title>Document</title>
-  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
--->
-  <link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" media="all" href="css/animate.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" media="all" href="css/animate.css">
 </head>
 <body>
 	<nav class="main-nav" role="navigation">
@@ -23,7 +17,7 @@
  <img src="images/burger.png" alt="">
 https://codepen.io/inkognitod/pen/gOpmmGX
 -->
-	<div class="spanbg"></div>
+		<div class="spanbg"></div>
     <span></span>
     <span></span>
     <span></span>
@@ -56,8 +50,11 @@ https://codepen.io/inkognitod/pen/gOpmmGX
 					<div><img src="images/map.png" alt="">Татарстан</div>
 					<div><img src="images/tel.png" alt="">+7 (927) 927 92 92</div>
 				</div>
-				<div class="col-md-2 justify-content-around d-inline-flex align-items-center">
+				<div class="col-md-2 justify-content-around d-none align-items-center">
 					<a href=""><img src="images/soc-insta.png" alt=""></a><a href=""><img src="images/soc-youtube.png" alt=""></a><a href=""><img src="images/soc-vk.png" alt=""></a>
+				</div>
+				<div class="col-md-2 justify-content-around d-inline-flex align-items-center">
+					<a href="https://www.instagram.com/profproect_?r=nametag" target="_blanc" alt=""><img src="images/soc-insta.png" alt=""></a> Мы в инстаграм
 				</div>
 				</div>
 			</div>
@@ -79,7 +76,7 @@ https://codepen.io/inkognitod/pen/gOpmmGX
 	<section class="first-section d-flex align-items-center">
 			<div class="container animated fadeIn delay-6s">
 				<div class="row offset-md-6">
-					<div class="col-sm-6 col-xs-12">
+					<div class="col-sm-12 col-xs-12">
 						<h1>Мы создадим для вас <br /><span class="red">уют</span></h1>
 						<p>Мы берём все трудности по ремонту на себя</p>
 						<button class="btn"><a href="#contacts">заказать рассчеты</a></button>
@@ -377,6 +374,10 @@ https://codepen.io/inkognitod/pen/gOpmmGX
 					<div class="title d-flex justify-content-center">
 						<h2>Новости</h2>
 					</div>
+					<!-- Начало ленты инстаграм  -->
+					<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+					<div class="elfsight-app-dc752aed-fb79-48eb-aced-2c5be31827e8"></div>
+					<!-- Конец ленты инстаграм  -->
 				<div class="row hidden-sm-down">
 					<div class="col-md-4 news-item wow animated fadeIn">
 						<div class="news-item-image">
@@ -446,7 +447,7 @@ https://codepen.io/inkognitod/pen/gOpmmGX
 					</div>
 				<div class="row w-100 my-5">
 					<div class="news-more w-100">
-						<a href="#" alt="" title="">Все новости</a>
+						<a href="https://www.instagram.com/profproect_/?r=nametag" alt="" title="" target="_blanc">Все новости</a>
 					</div>
 				</div>
 				</div>
@@ -456,26 +457,28 @@ https://codepen.io/inkognitod/pen/gOpmmGX
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 mob-first wow animated bounceInLeft">
-						<form class="form" action="action.php" method="post">
-							 <div class="col-xs-12">
-							 <div class="form-group">
-							 <input type="text" name="name" required class="form-control" placeholder="Имя" />
-							 </div>
-							 </div>
-							 <div class="col-xs-12">
-							 <div class="form-group">
-							 <input type="text" name="phone" required class="form-control" placeholder="Телефон" />
-							 </div>
-							 </div>
-							 <div class="col-xs-12">
-							 <div class="form-group">
-							 <input type="text" name="email" class="form-control" placeholder="E-mail" />
-							 </div>
-							 </div>
-							 <div class="text-left col-xs-12">
-							 <input type="submit" class="btn btn-default" value="Отправить" />
-							 </div>
-						</form>
+						<form id="feedback" action="">
+							  <div class="form-group">
+							    <input type="text" class="form-control" name="name" placeholder="Введите имя">
+							  </div>
+							  
+							  <div class="form-group">
+							    <input type="email" class="form-control" name="email" placeholder="Введите Email">
+							  </div>
+							  
+							  <div class="form-group">
+							    <input type="tel" class="form-control" name="phone" placeholder="Введите телефон">
+							  </div>
+							  
+							  <div class="form-check">
+							    <label class="form-check-label">
+							      <input type="checkbox" name="agree" class="form-check-input">
+							     Я понимаю, что мои данные будут обработаны и сохранены
+							    </label>
+							  </div>
+							  <button type="submit" class="btn btn-primary">Отправить</button>
+							</form>
+						<div id="results"> </div>
 					</div>
 					<div class="col-md-6 mob-second wow animated bounceInRight">
 						<div class="four-section-title">Остались вопросы?</div>
@@ -495,11 +498,12 @@ https://codepen.io/inkognitod/pen/gOpmmGX
 						<div><img src="images/tel.png" alt="">+7 (927) 927 92 92</div>
 						<div><img src="images/mail.png" alt="">profproect@mail.ru</div>
 					</div>
-					<div class="col-md-2 col-xs-12 justify-content-around d-inline-flex align-items-center">
-						<a href=""><img src="images/soc-insta.png" alt=""></a>
-						<a href=""><img src="images/soc-youtube.png" alt=""></a>
-						<a href=""><img src="images/soc-vk.png" alt=""></a>
-					</div>
+				<div class="col-md-2 justify-content-around d-none align-items-center">
+					<a href=""><img src="images/soc-insta.png" alt=""></a><a href=""><img src="images/soc-youtube.png" alt=""></a><a href=""><img src="images/soc-vk.png" alt=""></a>
+				</div>
+				<div class="col-md-2 justify-content-around d-inline-flex align-items-center">
+					<a href="https://www.instagram.com/profproect_?r=nametag" target="_blanc" alt=""><img src="images/soc-insta.png" alt=""></a> Мы в инстаграм
+				</div>
 				</div>
 				<div class="row justify-content-end">
 					<img src="images/3x3studio.png" alt="">
@@ -523,11 +527,13 @@ https://codepen.io/inkognitod/pen/gOpmmGX
 				</div>
 			</div>
 	</footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" ></script>
   <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
-<script type="text/javascript" src="js/jquery.inputmask.js" charset="UTF-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" integrity="sha256-sPB0F50YUDK0otDnsfNHawYmA5M0pjjUf4TvRJkGFrI=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/jquery.inputmask.js" charset="UTF-8"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
