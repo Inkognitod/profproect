@@ -79,6 +79,26 @@ $('#multiCarousel4.carousel .carousel-item').each(function(){
         next.children(':first-child').clone().appendTo($(this));
       }
 });
+$('#brandsCarousel').carousel({
+  interval: 10000
+})
+$('#brandsCarousel.carousel .carousel-item').each(function(){
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<2;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});
+
 
 /* Маска телефона */
 $('input[name="phone"]').inputmask('+7(999) 999-99-99');
