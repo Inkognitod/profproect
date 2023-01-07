@@ -30,7 +30,7 @@ $mes = "
 $send = mail ($my_email,$title,$mes,"Content-type:text/plain; charset = utf-8\r\nFrom:$sender_email");
 
 // подключаем телеграм
-$token = "954131762:AAGWSeQD0sWYmWYtJi3H-dd1p6on4JbNGZE";
+$token = "your_tg_token";
 $chat_id = "-433339781";
 $arr = array(
     'Имя' => $name,
